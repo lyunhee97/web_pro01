@@ -2,6 +2,25 @@
 body{font-family: 'Roboto', sans-serif;}
 
 #header{position: relative; height: 1950px;background: skyblue;}
-#header .header_top{position: absolute; top: 20px; width: 1260px; height: 80px; background: #f00; left: 50%; margin-left: -630px;}
+
+#header .header_top{position: absolute; top: 20px; width: 1260px; height: 50px; left: 50%; margin-left: -630px;}
+#header .header_top h1{float: left; color:#fff; line-height: 50px;}
+#header .header_top nav{float: right;}
+#header .header_top nav ul{}
+#header .header_top nav ul li{float: left;}
+#header .header_top nav ul li a{display: block; line-height: 30px; padding: 10px 20px; color:#fff; font-weight: bold; }
+
 #header .slider_wrap{height: 1010px; background: blue;}
-#header .content{position: absolute; bottom: 0; width: 1260px; height: 1250px; background: #0f0; left: 50%; transform: translateX(-50%);}
+
+#header .content{position: absolute; bottom: 0; width: 1260px; height: 1250px; background: #0f0; left: 50%; transform: translateX(-50%); color:#fff;}
+#header .content .row{width: 100%; }
+#header .content .row img{margin: 0 auto; margin-bottom: 10px;}
+#header .content .row>div{float: left; width: 25%; height: 315px; position: relative;}
+#header .content .row>div:nth-child(1){background: skyblue}
+#header .content .row>div:nth-child(2){background: lightblue}
+#header .content .row>div:nth-child(3){background: red; width: 50%;}
+#header .content .row>div:nth-child(4){background: yellow}
+#header .content .row>div:nth-child(5){background: pink}
+#header .content .row>div:nth-child(6){background: violet;width: 50%;}
+
+#header .content .content-1st{position: absolute;  left: 50%; top: 50%; width: 170px;transform: translate(-50%, -50%); text-align: center;}
