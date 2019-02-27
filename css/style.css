@@ -19,7 +19,7 @@ body{font-family: 'Roboto', sans-serif;}
 
 
 
-.slider_wrap{height: 1010px; overflow: hidden;}
+.slider_wrap{height: 1005px; overflow: hidden;}
 .slider_wrap .slide>ul {position: absolute; top: 0;left: 0;}
 .slider_wrap .slide img{width: 100%; min-height: 1010px; object-fit:cover;}
 
@@ -51,6 +51,25 @@ body{font-family: 'Roboto', sans-serif;}
 .content .row>div:nth-child(4){background: #b8307c}
 .content .row>div:nth-child(5){background: #413d3e}
 .content .row>div:nth-child(6){background: url(../img/img01_03.jpg) no-repeat 0 0; width: 50%;}
+.content .row>div:nth-child(7){background: url(../img/img01_06.jpg) no-repeat 0 0;height: 630px;}
+.content .row>div:nth-child(8){background: url(../img/img01_04.jpg) no-repeat 0 0; width: 50%;}
+.content .row>div:nth-child(9){background: #b8307c}
+.content .row>div:nth-child(10){background: #413d3e}
+.content .row>div:nth-child(11){background: url(../img/img01_05.jpg) no-repeat 0 0; width: 50%;}
 
-.content .content-1st, .content-4st, .content-5st{position: absolute; top: 50%; left: 50%; width: 170px;transform: translate(-50%, -50%); text-align: center;}
-.content .content-2st{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.content .content-1st, .content-4st, .content-5st, .content-9st, .content-10st{position: absolute; top: 50%; left: 50%; width: 170px;transform: translate(-50%, -50%); text-align: center;}
+
+.content .content-2st{display: none; position: absolute; width: 100%; top: 0; bottom: 0; background: rgba(0,0,0,0.3); cursor: pointer;}
+.content .content-2st .btn{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.content .row>div:nth-child(2):hover .content-2st{display: block; }
+
+.content .content-6st, .content-7st, .content-8st, .content-11st{position: absolute; top: 30px; left: 50px;}
+
+.content .content-6st h4, .content-7st h4,.content-8st h4, .content-11st h4{position: relative; margin-bottom: 25px;}
+
+.content .content-6st h4:after, .content-7st h4:after, .content-8st h4:after, .content-11st h4:after{content: ""; position: absolute; left: 0; bottom: -15px; width: 50px; height: 2px; background: #fff}
+
+.content .content-6st p, .content-7st p, .content-8st p, .content-11st p{font-size: 2em;}
+
+.content-8st, .content-11st{color:#443b36; font-weight: bold}
+.content-8st h4:after, .content-11st h4:after{background:#443b36;}

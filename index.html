@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<title>:::: COMPANY ::::</title>
 	<link rel="stylesheet" href="./css/reset.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<link rel="stylesheet" href="./css/colorbox.css">
 	<link rel="stylesheet" href="./css/style.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/jquery.bxslider.js"></script>
+	<script src="./js/jquery.colorbox.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -55,9 +56,10 @@
 					</div>
 				</div>
 				<div>
-					<div class="content-2st">
-						<a href=""><img src="./img/icon01_06.png" alt="02"></a>
+					<div class="content-2st" href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">
+						<div class="btn"><img src="./img/icon01_06.png" alt="02"></div>
 					</div>
+
 				</div>
 				<div>
 					<div class="content-3st">
@@ -78,7 +80,38 @@
 				</div>
 				<div>
 					<div class="content-6st">
-						<h3>전력 및 에너지 플렌트</h3>
+						<h4>전력 및 에너지 플렌트</h4>
+						<p>세상을 밝히는<br>빛과 에너지</p>
+					</div>
+				</div>
+				<div>
+					<div class="content-7st">
+						<h4>건축</h4>
+						<p>편안하고<br>안전한 공간을<br>만들어가는<br>기술</p>
+					</div>
+				</div>
+				<div>
+					<div class="content-8st">
+						<h4>정유</h4>
+						<p>핵심 설계기술과<br>우수한 전문인력 확보</p>
+					</div>
+				</div>
+				<div>
+					<div class="content-9st">
+						<img src="./img/icon01_04.png" alt="01">
+						<h3>주요사업</h3>
+					</div>
+				</div>
+				<div>
+					<div class="content-10st">
+						<img src="./img/icon01_05.png" alt="01">
+						<h3>사회공헌활동</h3>
+					</div>
+				</div>
+				<div>
+					<div class="content-11st">
+						<h4>인프라 및 환경</h4>
+						<p>인간중심의 인프라 및<br>환경사업 전계</p>
 					</div>
 				</div>
 			</div>
@@ -91,6 +124,11 @@
 			auto: true,
 			speed: 800,
 			pause: 3000
+		});
+		$(".content-2st").colorbox({
+			iframe:true, 
+			innerWidth:640, 
+			innerHeight:390
 		});
 
 	});
