@@ -64,6 +64,17 @@
 				<div>
 					<div class="content-3st">
 						<h2>뉴스</h2>
+						<ul class="slide2">
+							<li>
+								<p>초중생에 장학금<br>6억 4천만원 지원 및 초청행사<br>진행...</p>
+								<img src="./img/img01_01.jpg" alt="01">
+							</li>
+							<li>
+								<p>아무말 대잔치<br>나도 6억 있었으면 좋겟다<br>부럽...	</p>
+								<img src="./img/img01_02.jpg" alt="02">
+							</li>
+						</ul>
+						<div class="box"></div>
 					</div>
 				</div>
 				<div>
@@ -117,6 +128,12 @@
 			</div>
 		</div>
 	</header>
+
+	<content id="container">
+		<div class="section1">
+			d
+		</div>
+	</content>
 </body>
 <script>
 	$(function(){
@@ -125,6 +142,15 @@
 			speed: 800,
 			pause: 3000
 		});
+
+		$(".slide2").bxSlider({
+			auto: true,
+			speed: 1000,
+			pause: 5000,
+			mode:"fade",
+			pager:false
+		});
+
 		$(".content-2st").colorbox({
 			iframe:true, 
 			innerWidth:640, 
