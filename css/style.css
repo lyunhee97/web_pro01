@@ -1,7 +1,7 @@
 @charset "utf-8";
 body{font-family: 'Roboto', sans-serif;}
 
-#header{position: relative; height: 1950px;background: #fff; margin-bottom: 80px;}
+#header{position: relative; height: 1950px;background: #fff; margin-bottom: 80px; min-width: 1260px;}
 
 /*상단 메뉴 영역 */
 .header_top{position: absolute; top: 40px; width: 1260px; height: 50px; left: 50%; margin-left: -630px; z-index: 9999}
@@ -21,8 +21,13 @@ body{font-family: 'Roboto', sans-serif;}
 
 /* 상단 슬라이드 세팅 */
 .slider_wrap{height: 1005px; overflow: hidden;}
-.slider_wrap .slide>ul {position: absolute; top: 0;left: 0;}
-.slider_wrap .slide img{width: 100%; min-height: 1010px; object-fit:cover;}
+.slider_wrap .slide>ul {position: absolute; top: 0;left: 0; }
+/*.slider_wrap .slide img{width: 100%; min-height: 1010px; object-fit:cover;}*/
+.slider_wrap li{height: 1005px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.slider_wrap li.img01{background-image: url(../img/mainimg01.jpg);}
+.slider_wrap li.img02{background-image: url(../img/mainimg02.jpg);}
+.slider_wrap li.img03{background-image: url(../img/mainimg01.jpg);}
+.slider_wrap li.img04{background-image: url(../img/mainimg02.jpg);}
 
 /*상단 BX슬라이드 영역*/
 .slider_wrap .bx-wrapper{box-shadow: none; border: none; background: none;}
@@ -38,9 +43,11 @@ body{font-family: 'Roboto', sans-serif;}
 .slider_wrap .bx-wrapper .bx-controls-direction a {position: absolute; top: 40%; width: 34px; height: 67px;}
 
 /* 슬라이드 위 텍스트 */
-.slide_txet{position: absolute; width: 1260px; margin: 0 auto; top: 280px; left: 50%; margin-left: -630px;}
-.slide_txet p{text-align: center; color:#fff; }
-.slide_txet p:nth-child(1){font-size:5em; font-weight: bold; margin-bottom: 10px;}
+.slider_wrap .slide_txet{position: absolute; width: 1260px; margin: 0 auto; top: 280px; left: 50%; margin-left: -630px;text-align: center; color:#fff; }
+.slider_wrap .slide_txet p{}
+.slider_wrap .slide_txet p:nth-child(1){position: relative; font-size:5em; font-weight: bold; margin-bottom: 10px;}
+.slider_wrap .slide_txet p:nth-child(1):after{content: ""; display: block; position: absolute;  width: 700px; height: 2px; bottom: 0; left: 50%; transform: translateX(-50%); background: #fff; transition: 0.3s}
+.slider_wrap .slide_txet p:nth-child(1):hover:after{width: 100%;}
 
 /*본문 영역 기본세팅 */
 .content{position: absolute; bottom: 0; width: 1260px; height: 1260px; background: #0f0; left: 50%; transform: translateX(-50%); color:#fff; }
@@ -50,6 +57,7 @@ body{font-family: 'Roboto', sans-serif;}
 .content .row>div:nth-child(1){background: #92c1d5}
 .content .row>div:nth-child(2){background: url(../img/img01_01.jpg) 0 0;}
 .content .row>div:nth-child(3){background: #fff; width: 50%;}
+.content .row>div:nth-child(3):after{content: ""; position: absolute; border-width: 20px; border-style: solid; border-color: transparent transparent transparent #fff; top: 150px;left: 315px;}
 .content .row>div:nth-child(4){background: #b8307c}
 .content .row>div:nth-child(5){background: #413d3e}
 .content .row>div:nth-child(6){background: url(../img/img01_03.jpg) no-repeat 0 0; width: 50%;}
@@ -67,18 +75,19 @@ body{font-family: 'Roboto', sans-serif;}
 .content .content-3st .slide2{position: absolute; top: 0; left: 0; }
 .content .content-3st h2{position: absolute; padding: 30px;color:#443b36;}
 .content .content-3st p{position: absolute;padding: 70px 0 0 30px;color:#443b36; font-weight: bold}
-.content .content-3st .box{position: absolute; top: 150px; left: 300px;width: 30px;height: 30px; background: #fff; transform: rotate(45deg);}
+/*.content .content-3st .box{position: absolute; top: 150px; left: 300px;width: 30px;height: 30px; background: #fff; transform: rotate(45deg);}*/
+
 .content .content-3st img{padding-left: 315px;}
 /* 본문 BX슬라이드 영역 */
-.content-3st .bx-wrapper{box-shadow: none; border: none; background: none;}
+.content .content-3st .bx-wrapper{box-shadow: none; border: none; background: none;}
 
-.content-3st .bx-wrapper .bx-prev{left: 201px; background: url('../img/btn01_01.jpg') no-repeat 0 0; }
-.content-3st .bx-wrapper .bx-next{right: 350px; background: url('../img/btn01_02.jpg') no-repeat 0 0;}
+.content .content-3st .bx-wrapper .bx-prev{left: 201px; background: url('../img/btn01_01.jpg') no-repeat 0 0; }
+.content .content-3st .bx-wrapper .bx-next{right: 350px; background: url('../img/btn01_02.jpg') no-repeat 0 0;}
 
-.content-3st .bx-wrapper .bx-prev:hover, .content-3st .bx-wrapper .bx-prev:focus, .content-3st .bx-wrapper .bx-next:hover, .content-3st .bx-wrapper .bx-next:focus {
-  background-position: 0 0; opacity: 0.8;}
+.content .content-3st .bx-wrapper .bx-prev:hover, .content .content-3st .bx-wrapper .bx-prev:focus, .content .content-3st .bx-wrapper .bx-next:hover, .content .content-3st .bx-wrapper .bx-next:focus {
+  background-position: 0 0; opacity: 0.5;}
 
-.content-3st .bx-wrapper .bx-controls-direction a {position: absolute; top: 260px; width: 38px; height: 38px; border: 1px solid #ddd;}
+.content .content-3st .bx-wrapper .bx-controls-direction a {position: absolute; top: 260px; width: 38px; height: 38px; border: 1px solid #ddd;}
 
 /*똑같은 애들 모음 */
 .content .content-1st, .content .content-4st, .content .content-5st, .content .content-9st, .content .content-10st{position: absolute; top: 50%; left: 50%; width: 170px;transform: translate(-50%, -50%); text-align: center;}
@@ -132,11 +141,11 @@ body{font-family: 'Roboto', sans-serif;}
 /* 본문 BX슬라이드 영역 */
 .content2 .content-1st .bx-wrapper{box-shadow: none; border: none; background: none;}
 
-.content2 .content-1st .bx-wrapper .bx-prev{left: 216px; background: url('../img/btn01_01.jpg') no-repeat 0 0; }
+.content2 .content-1st .bx-wrapper .bx-prev{left: 211px; background: url('../img/btn01_01.jpg') no-repeat 0 0; }
 .content2 .content-1st .bx-wrapper .bx-next{right: 25px; background: url('../img/btn01_02.jpg') no-repeat 0 0;}
 
 .content2 .content-1st .bx-wrapper .bx-prev:hover, .content2 .content-1st .bx-wrapper .bx-prev:focus, .content2 .content-1st .bx-wrapper .bx-next:hover, .content2 .content-1st .bx-wrapper .bx-next:focus {
-  background-position: 0 0; opacity: 0.8;}
+  background-position: 0 0; opacity: 0.5;}
 
 .content2 .content-1st .bx-wrapper .bx-controls-direction a {position: absolute; top: 305px; width: 38px; height: 38px; border: 1px solid #ddd;}
 
