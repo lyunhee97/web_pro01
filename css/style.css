@@ -81,15 +81,15 @@ body{font-family: 'Roboto', sans-serif;}
 .content-3st .bx-wrapper .bx-controls-direction a {position: absolute; top: 260px; width: 38px; height: 38px; border: 1px solid #ddd;}
 
 /*똑같은 애들 모음 */
-.content .content-1st, .content-4st, .content-5st, .content-9st, .content-10st{position: absolute; top: 50%; left: 50%; width: 170px;transform: translate(-50%, -50%); text-align: center;}
-.content .content-6st, .content-7st, .content-8st, .content-11st{position: absolute; top: 30px; left: 50px;}
-.content .content-6st h4, .content-7st h4,.content-8st h4, .content-11st h4{position: relative; margin-bottom: 25px;}
-.content .content-6st h4:after, .content-7st h4:after, .content-8st h4:after, .content-11st h4:after{content: ""; position: absolute; left: 0; bottom: -15px; width: 50px; height: 2px; background: #fff}
-.content .content-6st p, .content-7st p, .content-8st p, .content-11st p{font-size: 2em;}
-.content-8st, .content-11st{color:#443b36; font-weight: bold}
-.content-8st h4:after, .content-11st h4:after{background:#443b36;}
+.content .content-1st, .content .content-4st, .content .content-5st, .content .content-9st, .content .content-10st{position: absolute; top: 50%; left: 50%; width: 170px;transform: translate(-50%, -50%); text-align: center;}
+.content .content-6st, .content .content-7st, .content .content-8st, .content .content-11st{position: absolute; top: 30px; left: 50px;}
+.content .content-6st h4, .content .content-7st h4, .content .content-8st h4, .content .content-11st h4{position: relative; margin-bottom: 25px;}
+.content .content-6st h4:after, .content .content-7st h4:after, .content .content-8st h4:after, .content .content-11st h4:after{content: ""; position: absolute; left: 0; bottom: -15px; width: 50px; height: 2px; background: #fff}
+.content .content-6st p, .content .content-7st p, .content .content-8st p, .content .content-11st p{font-size: 2em;}
+.content .content-8st, .content .content-11st{color:#443b36; font-weight: bold}
+.content .content-8st h4:after, .content .content-11st h4:after{background:#443b36;}
 
-#container{position: relative; height: 1840px; background: #ddd; margin-bottom: 80px;}
+#container{position: relative; height: 1840px; background: #fff; margin-bottom: 80px;}
 #container .section1{width: 100%; height: 730px;background: url(../img/contentsbg01.jpg) no-repeat 0 0 fixed; background-size:100%  100%;}
 #container .section1 h4{position: relative;	padding-top: 70px; text-align: center;  font-size: 1em; color:#fff;}
 #container .section1 h4:after{content: ""; position: absolute; left: 50%; margin-left: -25px; bottom: -20px; width: 50px; height: 3px; background: #fff}
@@ -99,9 +99,68 @@ body{font-family: 'Roboto', sans-serif;}
 #container .section1 ul li+li{margin-left: 20px;}
 #container .section1 ul li:last-child{float: right;}
 #container .section1 .card{position: relative; height:380px; border-radius: 20px; overflow: hidden; transition: 0.4s;}
+#container .section1 .card:hover{transform: translate(-10px, -10px); box-shadow:8px 8px 10px rgba(0, 0, 0, 0.8);}
 #container .section1 .card img{position: absolute; top: 60px;	left: 50%; transform: translateX(-50%) }
 #container .section1 .card_body{position: absolute;	bottom: 0;	width: 300px; height: 180px;text-align: center; color: #fff}
 #container .section1 .card_body p:nth-child(1){font-weight: none; font-size:1.6em;line-height: 50px;}
 #container .section1 .card_body p:nth-child(2){font-weight: none; font-size:1em; line-height: 25px;}
 
-#container .section1 .card:hover{transform: translate(-10px, -10px); box-shadow:8px 8px 10px rgba(0, 0, 0, 0.8);}
+#container .section2{height: 1180px; padding-top: 80px;}
+
+
+
+.content2{position: relative; width: 1260px; margin: 0 auto;}
+.content2 .row{width: 100%; margin-bottom: 80px;}
+.content2 .row>div, .content2 .row2>div{float: left; position: relative; width: 25%; height: 315px; }
+.content2 .row>div:nth-child(1){background: #2e4d8e; height: 630px;}
+.content2 .row>div:nth-child(2){background: url(../img/img02_01.jpg)}
+.content2 .row>div:nth-child(3){background: #e7e7e7;}
+.content2 .row>div:nth-child(4){background: url(../img/img02_02.jpg)}
+.content2 .row>div:nth-child(5){background: #e7e7e7;}
+.content2 .row>div:nth-child(6){background: url(../img/img02_03.jpg)}
+.content2 .row>div:nth-child(7){background: #e7e7e7;}
+
+.content2 .row2>div:nth-child(1){background: #92c1d5 url(../img/img03_01.jpg) no-repeat 290px 35px;  width: 50%;}
+.content2 .row2>div:nth-child(2){background: #3f3f3f url(../img/img03_02.jpg) no-repeat 200px 0;  width: 50%;}
+
+/*본문 각기 영역 */
+.content2 .content-1st>p{font-size:2em; color:#fff; text-align: center; padding-top: 20px; padding-bottom: 40px;}
+.content2 .content-1st .slide3{position: absolute; top: 0; left: 0; }
+.content2 .content-1st .slide3 li{position: absolute; padding: 20px; color:#fff; line-height: 25px;}
+.content2 .content-1st li p{padding-top: 30px;}
+.content2 .content-1st img{margin: 0 auto;margin-top: 80px;}
+/* 본문 BX슬라이드 영역 */
+.content2 .content-1st .bx-wrapper{box-shadow: none; border: none; background: none;}
+
+.content2 .content-1st .bx-wrapper .bx-prev{left: 216px; background: url('../img/btn01_01.jpg') no-repeat 0 0; }
+.content2 .content-1st .bx-wrapper .bx-next{right: 25px; background: url('../img/btn01_02.jpg') no-repeat 0 0;}
+
+.content2 .content-1st .bx-wrapper .bx-prev:hover, .content2 .content-1st .bx-wrapper .bx-prev:focus, .content2 .content-1st .bx-wrapper .bx-next:hover, .content2 .content-1st .bx-wrapper .bx-next:focus {
+  background-position: 0 0; opacity: 0.8;}
+
+.content2 .content-1st .bx-wrapper .bx-controls-direction a {position: absolute; top: 305px; width: 38px; height: 38px; border: 1px solid #ddd;}
+
+.content2 .content-3st, 
+.content2 .content-5st, 
+.content2 .content-7st{position: absolute; padding: 50px 30px;}
+
+.content2 .content-3st img, 
+.content2 .content-5st img, 
+.content2 .content-7st img{ display: inline; }
+.content2 .content-3st p, 
+.content2 .content-5st p, 
+.content2 .content-7st p{position: absolute; top: 260px; }
+.content2 .content-3st span, 
+.content2 .content-5st span, 
+.content2 .content-7st span{position: absolute; top: 2px; left: 28px;}
+
+.content2 .content-8st, .content2 .content-9st{position: absolute; top: 50px; left: 40px; color: #fff;}
+.content2 .content-8st h4, .content2 .content-9st h4{position: relative; margin-bottom: 25px; font-size: 2em;}
+.content2 .content-8st h4:after, .content2 .content-9st h4:after{content: ""; position: absolute; left: 0; bottom: -15px; width: 50px; height: 3px; background: #fff}
+.content2 .btn{position: absolute; top: 160px; width: 170px; height: 50px; border: 1px solid rgba(255,255,255,1); text-align: center; line-height: 50px;}
+.content2 .btn:hover{background: rgba(255,255,255,0.3);}
+.content2 .btn a{color: #fff;}
+
+
+
+
